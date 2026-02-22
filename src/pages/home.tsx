@@ -52,7 +52,7 @@ export default function Home() {
                         <span className="highlight-text">CAD </span>
                         <span>to {`{code}`}</span>
                     </h1>
-                    <img src="./public/assets/cad-code-image.png" className="fctc-image" />
+                    <img src="/assets/cad-code-image.png" className="fctc-image" />
                 </div>
             </div>
         </div>
