@@ -6,8 +6,8 @@ export default function HeroFooter() {
     return (
         <div className="hero-footer">
             <div className="social">
-                <Github />
-                <Linkedin />
+                <Github href="https://github.com/mtab-dev" target="_blank" style={{cursor: "pointer"}}/>
+                <Linkedin href="https://linkedin.com/in/mtab-dev" target="_blank" style={{cursor: "pointer"}}/>
             </div>
             <div className="menu-bar" style={{marginLeft: "8rem"}}>
                 <MenuBar />
