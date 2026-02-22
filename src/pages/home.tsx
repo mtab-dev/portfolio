@@ -1,5 +1,6 @@
 import "./home.scss"
 import HeroFooter from "../components/hero-footer/hero-footer"
+import { Github, Linkedin } from "lucide-react"
 
 
 export default function Home() {
@@ -15,9 +16,13 @@ export default function Home() {
                     <h4 className="hero-secondary-text">Who am i? Mechanical Engineering Undergraduate and Software Developer
                     </h4>
                     <h2>{`{Design. Develop. Deliver.}`}   </h2>
+                    <div className="mobile-social">
+                        <Github href="https://github.com/mtab-dev" target="_blank" style={{ cursor: "pointer" }} />
+                        <Linkedin href="https://linkedin.com/in/mtab-dev" target="_blank" style={{ cursor: "pointer" }} />
+                    </div>
                 </div>
                 <div className="hero-footer">
-                   <HeroFooter />
+                    <HeroFooter />
                 </div>
             </div>
         </div>
