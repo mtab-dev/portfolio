@@ -1,16 +1,15 @@
 .menu-bar {
-    display: flex;
-    background-color: var(--bg-secondary);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    width: fit-content;
-    height: fit-content;
-    padding-inline: 1rem;
-    padding-block: 0.5rem;
-    border-radius: 50px;
-    margin: 0;
+  display: flex;
+  justify-content: center; // 🔥 centraliza no mobile
+  align-items: center;
+  gap: 1rem;
+
+  background-color: var(--bg-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+
+  width: max-content; // melhor que fit-content
+  max-width: 100%;
 }
 
 .selected-option {
@@ -49,6 +48,6 @@
     .menu-bar {
         gap: 3rem;
         padding-inline: 3rem;
-        margin-left: 8rem;
+        margin-left: 9rem;
     }
 }
