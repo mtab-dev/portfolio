@@ -25,6 +25,36 @@ export default function Home() {
                     <HeroFooter />
                 </div>
             </div>
+            <div className="from-cad-to-code">
+                <div className="fctc-text-section">
+                    <h1 className="fctc-title">
+                        <span>from </span>
+                        <span className="highlight-text">CAD </span>
+                        <span>to {`{code}`}</span>
+                    </h1>
+                    <h4 className="fctc-secondary-text">
+                        <span>The  </span>
+                        <span className="highlight-text">intersection  </span>
+                        <span>between physical and digital  </span>
+                        <span className="highlight-text">solutions</span>
+                    </h4>
+                    <h4 className="fctc-description">
+                        Being a Mechanical{" "}
+                        <span className="highlight-text">Engineering</span>{" "}
+                        student with a background in web development allows me to design{" "}
+                        <span className="highlight-text">projects</span>{" "}
+                        in many fields.
+                    </h4>
+                </div>
+                <div className="fctc-visual">
+                    <h1 className="fctc-title-mobile">
+                        <span>from </span>
+                        <span className="highlight-text">CAD </span>
+                        <span>to {`{code}`}</span>
+                    </h1>
+                    <img src="./public/assets/cad-code-image.png" className="fctc-image" />
+                </div>
+            </div>
         </div>
     )
 }

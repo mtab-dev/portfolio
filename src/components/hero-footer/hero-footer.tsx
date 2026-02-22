@@ -13,7 +13,7 @@ export default function HeroFooter() {
                 <MenuBar />
             </div>
             <div className="in-a-hurry">
-                <h4 className="hero-secondary-text">In a hurry? Download my resume!</h4>
+                <h4 className="in-a-hurry-text">In a hurry? Download my resume!</h4>
                 <button className="resume-button">Resume <SquareArrowOutUpRight width={16} /></button>
             </div>
         </div>
