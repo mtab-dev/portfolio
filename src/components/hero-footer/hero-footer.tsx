@@ -4,12 +4,12 @@ import "./hero-footer.scss"
 
 export default function HeroFooter() {
     return (
-        <div className="hero-footer">
+        <div className="hero-footer-section">
             <div className="social">
                 <Github href="https://github.com/mtab-dev" target="_blank" style={{cursor: "pointer"}}/>
                 <Linkedin href="https://linkedin.com/in/mtab-dev" target="_blank" style={{cursor: "pointer"}}/>
             </div>
-            <div className="menu-bar" style={{marginLeft: "8rem"}}>
+            <div className="menu-bar-section">
                 <MenuBar />
             </div>
             <div className="in-a-hurry">

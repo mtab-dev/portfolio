@@ -1,14 +1,30 @@
-.hero-footer {
+.hero-footer-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .resume-button {
     padding-inline: 1rem;
 }
 
-.menu-bar-section{
+.menu-bar-section {
     margin-left: 2rem;
+}
+
+.social,
+.in-a-hurry {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .social,
+    .in-a-hurry {
+        display: block;
+    }
+
+
 }
