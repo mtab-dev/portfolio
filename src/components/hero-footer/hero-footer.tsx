@@ -1,16 +1,27 @@
 import { Github, Linkedin, SquareArrowOutUpRight } from "lucide-react";
 import MenuBar from "../menu-bar/menu-bar";
 import "./hero-footer.scss"
+interface HeroFooterProps {
+    selected: string;
+    onSelect: (page: string) => void;
+}
 
-export default function HeroFooter() {
+export default function HeroFooter({
+    selected,
+    onSelect,
+}: HeroFooterProps) {
     return (
         <div className="hero-footer-section">
             <div className="social">
-                <Github href="https://github.com/mtab-dev" target="_blank" style={{ cursor: "pointer" }} />
-                <Linkedin href="https://linkedin.com/in/mtab-dev" target="_blank" style={{ cursor: "pointer" }} />
+                <a href="https://github.com/mtab-dev" target="_blank" style={{color: "white"}} >
+                    <Github style={{ cursor: "pointer" }} />
+                </a>
+                <a href="https://linkedin.com/in/mtabrantes" target="_blank" style={{color: "white"}}>
+                    <Linkedin style={{ cursor: "pointer" }} />
+                </a>
             </div>
             <div className="menu-bar-section">
-                <MenuBar />
+                <MenuBar selected={selected} onSelect={onSelect}  />
             </div>
             <div className="in-a-hurry">
                 <h4 className="in-a-hurry-text">In a hurry? Download my resume!</h4>

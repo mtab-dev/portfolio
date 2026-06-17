@@ -1,15 +1,19 @@
 import { Moon, Home, User, FileText, Folder, Mail } from "lucide-react";
 import "./menu-bar.scss";
-import { useState } from "react";
+interface MenuBarProps {
+    selected: string;
+    onSelect: (page: string) => void;
+}
 
-export default function MenuBar() {
-    const [selected, setSelected] = useState("Home");
-
+export default function MenuBar({
+    selected,
+    onSelect,
+}: MenuBarProps) {
     return (
         <div className="menu-bar">
             <a
                 className={selected === "Home" ? "selected-option" : ""}
-                onClick={() => setSelected("Home")}
+                onClick={() => onSelect("Home")}
             >
                 <Home className="icon" />
                 <span className="label">Home</span>
@@ -17,7 +21,7 @@ export default function MenuBar() {
 
             <a
                 className={selected === "About" ? "selected-option" : ""}
-                onClick={() => setSelected("About")}
+                onClick={() => onSelect("About")}
             >
                 <User className="icon" />
                 <span className="label">About</span>
@@ -25,7 +29,7 @@ export default function MenuBar() {
 
             <a
                 className={selected === "Resume" ? "selected-option" : ""}
-                onClick={() => setSelected("Resume")}
+                onClick={() => onSelect("Resume")}
             >
                 <FileText className="icon" />
                 <span className="label">Resume</span>
@@ -33,7 +37,7 @@ export default function MenuBar() {
 
             <a
                 className={selected === "Projects" ? "selected-option" : ""}
-                onClick={() => setSelected("Projects")}
+                onClick={() => onSelect("Projects")}
             >
                 <Folder className="icon" />
                 <span className="label">Projects</span>
@@ -41,13 +45,11 @@ export default function MenuBar() {
 
             <a
                 className={selected === "Contact" ? "selected-option" : ""}
-                onClick={() => setSelected("Contact")}
+                onClick={() => onSelect("Contact")}
             >
                 <Mail className="icon" />
                 <span className="label">Contact</span>
             </a>
-
-            <Moon />
         </div>
     );
 }
