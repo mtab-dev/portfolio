@@ -1,6 +1,6 @@
 .hero-footer-section {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 24px;
   width: 100%;
   align-items: center;
@@ -12,18 +12,18 @@
 }
 
 .in-a-hurry {
-  display: none; 
+  display: none;
 }
 
-.in-a-hurry-text{
-  font-size: 12px;
+.in-a-hurry-text {
+  font-size: 14px;
   color: var(--text-secondary);
 }
 
 .menu-bar-section {
   width: 100%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -41,7 +41,7 @@
 
   .menu-bar-section {
     width: auto;
-    gap: 1.5rem; 
+    gap: 1.5rem;
     justify-content: center;
   }
 

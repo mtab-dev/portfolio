@@ -45,6 +45,19 @@ export default function Home() {
                         <span className="highlight-text">projects</span>{" "}
                         in many fields.
                     </h4>
+                    
+                    <div className="skills">
+                        <h4 className="fctc-secondary-text" >Some of my skills are: </h4>
+
+                        <div className="skills-grid">
+                            <img src="/skills/pngwing.com (1).png" alt="SolidWorks" />
+                            <img src="/skills/logo-fusion.png" alt="Fusion 360" />
+                            <img src="/skills/logo-excel.png" alt="Excel" />
+                            <img src="/skills/logo-matlab.png" alt="MatLab" />
+                            <img src="/skills/logo-py.png" alt="Python" />
+                        </div>
+                    </div>
+
                 </div>
                 <div className="fctc-visual">
                     <h1 className="fctc-title-mobile">
