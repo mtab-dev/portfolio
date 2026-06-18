@@ -3,6 +3,7 @@ import HeroFooter from "../components/hero-footer/hero-footer"
 import { Github, Linkedin } from "lucide-react"
 import HomeSection from "../components/sections/home-section"
 import { useState } from "react"
+import ContactSection from "../components/sections/contact/contact-section"
 
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
             {selectedContent === "About" && <div> </div>}
             {selectedContent === "Resume" && <div/>}
             {selectedContent === "Projects" && <div/>}
-            {selectedContent === "Contact" && <div />}
+            {selectedContent === "Contact" && <ContactSection />}
         </div>
     )
 }

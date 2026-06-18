@@ -1,4 +1,4 @@
-import { Moon, Home, User, FileText, Folder, Mail } from "lucide-react";
+import { Home, User, FileText, Folder, Mail } from "lucide-react";
 import "./menu-bar.scss";
 interface MenuBarProps {
     selected: string;
