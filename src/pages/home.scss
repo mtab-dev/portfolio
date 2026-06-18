@@ -160,6 +160,16 @@ h4 {
     padding-inline: 5%;
 }
 
+.fctc-title {
+    display: none;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    color: var(--text-secondary);
+    padding-left: 2rem;
+}
+
+
 .fctc-image {
     width: 320px;
 }
